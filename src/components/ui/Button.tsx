@@ -69,4 +69,7 @@ Button.displayName = "Button"
 
 export { Button, buttonVariants }
 
-  
+// Añadir exportación por defecto
+export default Button
+
+    

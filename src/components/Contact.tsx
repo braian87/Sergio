@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { FiMail, FiPhone, FiMapPin, FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi';
-import Button from './ui/Button';
+import { Button } from './ui/Button';
 
 const Contact = () => {
   const [ref, inView] = useInView({

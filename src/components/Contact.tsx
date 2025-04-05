@@ -209,7 +209,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-serif text-white mb-2">¡Gracias!</h3>
                 <p className="text-gray-400 mb-6">Tu mensaje se ha enviado a WhatsApp. Me pondré en contacto contigo pronto.</p>
                 <Button 
-                  variant="primary" 
+                  variant="default" 
                   onClick={() => {
                     setSubmitted(false);
                     formik.resetForm();

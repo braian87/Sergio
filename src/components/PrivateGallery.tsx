@@ -104,7 +104,7 @@ const PrivateGallery = () => {
               </div>
               
               <Button 
-                variant="primary" 
+                variant="default" 
                 onClick={handleUnlock}
               >
                 Unlock Gallery

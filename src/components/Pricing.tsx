@@ -95,7 +95,7 @@ const Pricing = () => {
                 
                 <Button 
                   onClick={() => handleChoosePackage(plan.name)}
-                  variant={plan.popular ? "primary" : "secondary"}
+                  variant={plan.popular ? "default"}
                   className="w-full"
                 >
                   Elegir Paquete

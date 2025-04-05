@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-black text-gray-200 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-serif text-white mb-4;
+  }
+  
+  .section-desc {
+    @apply text-gray-400 max-w-2xl mx-auto mb-12;
+  }
+  
+  .gold-divider {
+    @apply w-20 h-1 bg-gold-500 mx-auto mt-6;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { FiMail, FiPhone, FiMapPin, FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi';
-import { Button } from './ui/Button';
+import Button from './ui/Button';
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -209,7 +209,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-serif text-white mb-2">¡Gracias!</h3>
                 <p className="text-gray-400 mb-6">Tu mensaje se ha enviado a WhatsApp. Me pondré en contacto contigo pronto.</p>
                 <Button 
-                  variant="default" 
+                  variant="primary" 
                   onClick={() => {
                     setSubmitted(false);
                     formik.resetForm();
@@ -303,7 +303,7 @@ const Contact = () => {
                 
                 <Button
                   type="submit"
-                  variant="default"
+                  variant="primary"
                   className="w-full"
                   isLoading={formik.isSubmitting}
                   disabled={formik.isSubmitting}
@@ -320,5 +320,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-      

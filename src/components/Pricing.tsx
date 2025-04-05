@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { Button } from './ui/Button';
+import Button from './ui/Button';
 import { pricing } from '../data/pricing';
 
 const Pricing = () => {
@@ -95,7 +95,7 @@ const Pricing = () => {
                 
                 <Button 
                   onClick={() => handleChoosePackage(plan.name)}
-                  variant="default"
+                  variant={plan.popular ? "primary" : "secondary"}
                   className="w-full"
                 >
                   Elegir Paquete

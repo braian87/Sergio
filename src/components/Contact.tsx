@@ -303,7 +303,7 @@ const Contact = () => {
                 
                 <Button
                   type="submit"
-                  variant="primary"
+                  variant="default"
                   className="w-full"
                   isLoading={formik.isSubmitting}
                   disabled={formik.isSubmitting}
@@ -320,3 +320,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+      
